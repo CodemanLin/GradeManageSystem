@@ -1,0 +1,39 @@
+Bootstrap 是一个用于快速开发 Web 应用程序和网站的前端框架。Bootstrap 是基于 HTML、CSS、JAVASCRIPT 的。它简洁灵活，使得 Web 开发更加快捷。
+© 2020 学生成绩管理系统.Wei.Zhong.Lin. Reserved
+Morris.js 
+是个轻量级的 JavaScript 库，使用 jQuery 和 Rapha&enuml 来绘制时序图。
+Morris.js包括线图、柱图、区域图、圆环图等等。Morris.js 生命周期是从代码驱动 howmanyleft.co.uk 图表开始的。
+它支持的浏览器有： IE6+, Safari/Chrome/Firefox, iOS 3+ 和 Android 3+。
+它的公共 API 非常的小，只有一个函数： Morris.Line(选项)，包括了许多配置选项。
+
+
+jquery.vmap.world.js
+JQVMAP 可 以方便的帮助你生成漂亮的矢量地图。在现代浏览器中它使用了SVG（Scalable Vector Graphics）技术生成地图图片，
+如果你也需要支持老版本的浏览器，例如，IE6/7/8的话，它也可以通过VML来实现.
+
+主要特性
+支持现代浏览器，同时对于老版本浏览器也可以通过其它fallback方式支持
+支持缩放，拖动查看
+提供丰富的地图生成参数
+目前支持：世界地图，美国地图，欧洲，德国地图
+你可以自己定义自己的地图（当然，这个过程比较繁琐）
+实时更新地图
+需要jQuery类库支持
+完整清晰的文档说明
+
+slimscroll.js
+用于模拟传统的浏览器滚动条(竖向),原理为原内容内置于一个仅可视区域显示层,
+使用2个div层用于模拟滚动条和滚动条背景轨道监听滚动条div高度变化来控制内容层位置(猜测),
+可自定义滚动条颜色,其轨迹(背景颜色),宽度,位置,滚动阀值,与容器的padding值等~使用中依赖于jquery库.
+
+jquery.scrollTo.js
+用于定位页面中元素的位置，并使滚动条滚动到当前元素。  插件可以按x轴、y轴滚动。可以嵌套元素，当前元素在父元素中滚动。
+当点击导航按钮时，触发scrollTo方法，$.scrollTo带有两个参数，第一个是指定要滚动的目的ID，第二个参数是滚动时间间隔，以毫秒为单位。
+在本例中，只应用了scrollTo的基本方法。其实scrollTo还可以指定横向纵向滚动，传冲效果等，具体可以参照官方网站的例子：http://demos.flesler.com/jquery/scrollTo/
+
+jQuery File Upload 
+是一个Jquery图片上传组件，支持多文件上传、取消、删除，上传前缩略图预览、列表显示图片大小，
+支持上传进度条显示；支持各种动态语言开发的服务器端。
+
+jQuery Accordion 
+插件用于创建折叠菜单。它通常与嵌套的列表、定义列表或嵌套的 div 一起使用。选项用于指定结构、激活的元素和定制的动画。
