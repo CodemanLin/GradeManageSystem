@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>学生成绩管理系统</title>
+<meta charset="utf-8" />
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+	html, body{
+	font-family: 'Roboto', sans-serif;
+    font-size: 100%;
+    overflow-x: hidden;
+    background: url("images/mainbg.jpg") no-repeat 0px 0px;
+	background-size:cover;
+}
+	#fan{
+		color: white; 
+		float: right; 
+		position: fixed;
+		right: 750px;
+	}
+</style>
+</head>
+<body>
+<div class="log-w3">
+    <h2 align="center">欢 迎 您 使 用 学 生 成 绩 管 理 系 统 !</h2>
+	<a href="index/index.html" id="fan">返回首页</a>
+  <div class="w3layouts-main">
+    <h2>统一身份认证登录</h2>
+    <form action="login.php" method="post" >
+      <input type="text" class="in" name="name" placeholder="账号" required="">
+      <input type="password" class="in" name="password" placeholder="密码" required="">
+      <center>
+        <span>
+        <input type="radio" name="user" value="1" />
+        管理员</span> <span>
+        <input type="radio" name="user" value="2" />
+        教师</span> <span>
+        <input type="radio" name="user" value="3" />
+        学生</span>
+      </center>
+      <div class="clearfix"></div>
+      <input type="submit" value="登   录" name="login">
+    </form>
+  </div>
+</div>
+	
+</body>
+</html>

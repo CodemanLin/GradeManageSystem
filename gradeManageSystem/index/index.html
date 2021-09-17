@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="webthemez">
+    <title>学生成绩管理系统</title>
+    <!-- core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/animate.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+    <link href="css/index_style.css" rel="stylesheet" type="text/css">
+
+
+</head>
+
+<body id="home">
+<header id="header">
+    <nav id="main-nav" class="navbar navbar-default navbar-fixed-top" role="banner">
+        <div class="container">
+            <div class="navbar-header"><a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" alt="logo"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right">
+                <ul class="nav navbar-nav">
+                    <li class="scroll active"><a href="#home">登录</a></li>
+                    <li class="scroll"><a href="#features">介绍</a></li>
+                </ul>
+            </div>
+        </div>
+        <!--/.container-->
+    </nav>
+    <!--/nav-->
+</header>
+<!--/header-->
+
+<section id="hero-banner">
+    <div class="banner-inner">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-12">
+                    <h2><b>广外</b> 学生成绩管理系统</h2>
+                    <a class="btn btn-primary btn-lg" href="../login.html">Enter</a></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--/#main-slider-->
+
+<section id="features">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title wow fadeInDown">Our School</h2>
+        </div>
+        <div id="main">
+            <a class="btnLeft" id="btnLeft" href="javascript:void(0);"></a>
+            <a class="btnRight" id="btnRight" href="javascript:void(0);"></a>
+            <div class="box">
+                <img src="images/intro1.jpg" alt="image1" class="image1"/>
+                <img src="images/intro2.jpg" alt="image2"/>
+                <img src="images/intro3.jpg" alt="image3"/>
+            </div>
+        </div>
+    </div>
+</section>
+<section id="services">
+    <div class="container">
+        <div class="section-header">
+            <h2 class="section-title wow fadeInDown">Introduction</h2>
+            <p class="wow fadeInDown"></p>
+        </div>
+        <div class="row">
+            <div class="features">
+                <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="0ms">
+                    <div class="media service-box">
+                        <div class="pull-left"><i class="fa fa-futbol-o"></i></div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="学校简介.html">学校简介</a></h4>
+                            <p>一起简单的认识认识</p>
+                            <p>广东外语外贸大学^_^</p>
+                        </div>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+
+                <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="100ms">
+                    <div class="media service-box">
+                        <div class="pull-left"><i class="fa fa-compass"></i></div>
+                        <div class="media-body">
+                            <h4 class="media-heading"><a href="校徽校训.html">校徽校训</a></h4>
+                            <p>点我浏览广外校徽校训</p>
+                        </div>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+
+                <div class="col-md-4 col-sm-6 wow fadeInUp" data-wow-duration="300ms" data-wow-delay="200ms">
+                    <div class="media service-box">
+                        <div class="pull-left"><i class="fa fa-database"></i></div>
+                        <div class="media-body">
+                            <h4 class="media-heading">
+                                <a href="校歌.html">校歌</a>
+                            </h4>
+                            <p>点我一起唱校歌</p>
+                        </div>
+                    </div>
+                </div>
+                <!--/.col-md-4-->
+
+            </div>
+            <!--features end-->
+        </div>
+        <!--/.row-->
+    </div>
+    <!--/.container-->
+</section>
+<!--services end-->
+
+<footer id="footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-6">Copyright &copy; 2020.魏金威,钟洁莹,林勤铭 reserved</div>
+        </div>
+    </div>
+</footer>
+
+
+<script type="text/javascript" src="js/jquery2.0.3.min.js"></script>
+<script src="js/custom-scripts.js"></script><!--页面滚动右上角切换-->
+<script src="js/wow.min.js"></script> <!--页面加载元素呈现-->
+<script src="js/pictures.js"></script>
+<!--script type="text/javascript" src="js/jquery2.0.3.min.js"></script-->
+<!--script type="text/javascript">
+(function($){
+
+	var aPage = $('#main .page a');		//分页按钮
+	var aImg = $('#main .box img');		//图像集合
+	var iSize = aImg.size();		//图像个数
+	var index = 0;		//切换索引
+	//var t;
+	$('#btnLeft').click(function(){		//左边按钮点击
+		index--;
+		if(index<0){
+			index=iSize-1
+		}
+		change(index)
+	})
+	$('#btnRight').click(function(){    //右边按钮点击
+		index++;
+		if(index>iSize-1){
+			index=0
+		}
+		change(index)
+	})
+	//分页按钮点击
+	aPage.click(function(){
+	index = $(this).index();
+		change(index)
+	});
+	//切换过程
+	function change(index){
+		aPage.removeClass('active');
+		aPage.eq(index).addClass('active');
+		aImg.stop();
+		//隐藏除了当前元素，所以图像
+		aImg.eq(index).siblings().animate({
+			opacity:0
+		},1000)
+		//显示当前图像
+		aImg.eq(index).animate({
+			opacity:1
+		},1000)
+	}
+
+	 
+	function autoshow() {
+		index=index+1;
+		if(index<=iSize-1){
+		   change(index);
+		}else{
+			index=0;
+			change(index);
+		}
+			
+	}
+	int=setInterval(autoshow,3000);
+	function clearInt() {
+		$('#btnLeft,#btnRight,.page a').mouseover(function() {
+			clearInterval(int);
+		})
+	
+	}
+	function setInt() {
+		$('#btnLeft,#btnRight,.page a').mouseout(function() {
+			int=setInterval(autoshow,3000);
+		})
+	}
+	clearInt();
+	setInt();
+})(jQuery);
+</script-->
+</body>
+</html>
